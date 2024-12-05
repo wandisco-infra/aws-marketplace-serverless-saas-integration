@@ -26,18 +26,17 @@ const setBuyerNotificationHandler = function (contactEmail) {
     Message: {
       Body: {
         Html: {
-          Charset: "UTF-8",
-          Data: "<!DOCTYPE html><html><head><title>Welcome!<\/title><\/head><body><h1>Welcome!<\/h1><p>Thanks for purchasing<\/p><p>We\u2019re thrilled to have you on board. Our team is hard at work setting up your account, please expect to hear from a member of our customer success team soon<\/p><\/body><\/html>"
+          Charset: 'UTF-8',
+          Data: '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link rel="stylesheet" href="https://d2ablbfnvxh95v.cloudfront.net/fonts.css"><link rel="stylesheet" href="https://d2ablbfnvxh95v.cloudfront.net/style.css"><title>Registration page</title></head><body class="text-center"><div class="container"><img src="https://d2ablbfnvxh95v.cloudfront.net/cirata-logo.svg" class="logo"><h1 class="form-signin-heading mb-3">Welcome!</h1><p>Thanks for purchasing</p><p>We are thrilled to have you on board. Our team is hard at work setting up your account, please expect to hear from a member of our customer success team soon</p></div></body></html>'
         },
         Text: {
-          Charset: "UTF-8",
-          Data: "Welcome! Thanks for purchasing. We’re thrilled to have you on board. Our team is hard at work setting up your account, please expect to hear from a member of our customer success team soon"
+          Charset: 'UTF-8',
+          Data: 'Welcome! Thanks for purchasing. We are thrilled to have you on board. Our team is hard at work setting up your account, please expect to hear from a member of our customer success team soon'
         }
       },
-
       Subject: {
         Charset: 'UTF-8',
-        Data: "Welcome Email"
+        Data: 'Welcome Email'
       }
     },
     Source: marketplaceSellerEmail,
